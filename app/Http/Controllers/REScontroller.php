@@ -18,6 +18,7 @@ use App\Models\PageSifarislerComment;
 use App\Models\Adress;
 use App\Models\Phone;
 use App\Models\Email;
+use App\Models\Employe;
 
 
 
@@ -59,4 +60,34 @@ $phone=Phone::where('id',1)->first();
 $email=Email::where('id',1)->first();
         return view("Contact",compact('adress','phone','email'));
     }
+
+
+public function employe(Request $req){
+
+$data=new Employe;
+
+$req->validate([
+"name"=>"required",
+"busines"=>"required",
+"job"=>"required",
+"person"=>"required",
+"phone"=>"required",
+]);
+
+$data->name=$req->name;
+$data->busines=$req->busines;
+$data->job=$req->job;
+$data->person=$req->person;
+$data->phone=$req->phone;
+
+$data->save();
+
+return redirect()->back();
+}
+
+public function adminemploye(){
+$data=Employe::paginate(5);
+    return view('admin.employe',compact('data'));
+}
+
 }

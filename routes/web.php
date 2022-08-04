@@ -243,6 +243,17 @@ Route::post("/Uemail",[Contact_cont::class,'uemail'])->name('Updateemail');
 
 Route::get("deleteemail/{id}",[Contact_cont::class,'deleteemail']);
 
+//employe
+
+Route::post("/Storemploye",[RESController::class,'employe'])->name('employe');
+
+Route::get("/Employe",[RESController::class,'adminemploye'])->name('adminemploye');
+
+
+
+
+
+
 
 
 

@@ -24,10 +24,10 @@
               </h4>
               <div class="footer-links">
                 <ul>
-                  <li><a href="./about.html" class="footer-link">Haqqımızda</a></li>
-                  <li><a href="./partners.html" class="footer-link">Partnyorlar</a></li>
-                  <li><a href="./orders.html" class="footer-link">Sifarişlər</a></li>
-                  <li><a href="./contact.html" class="footer-link">Əlaqə</a></li>
+                  <li><a href="{{route('Mainhaqqimizda')}}" class="footer-link">Haqqımızda</a></li>
+                  <li><a href="{{route('Mainpartnyrolar')}}" class="footer-link">Partnyorlar</a></li>
+                  <li><a href="{{route('Mainsifarisler')}}" class="footer-link">Sifarişlər</a></li>
+                  <li><a href="{{route('Maincontact')}}" class="footer-link">Əlaqə</a></li>
 
                 </ul>
               </div>

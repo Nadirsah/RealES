@@ -42,10 +42,10 @@
               </div>
               <nav class="mobile-nav-menu">
                 <ul class="nav-list">
-                  <li class="nav-item"><a class="nav-link" href="./about.html">Haqqımızda</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./partners.html">Partnyorlar</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Sifarişlər</a></li>
-                  <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{route('Mainhaqqimizda')}}">Haqqımızda</a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{route('Mainpartnyrolar')}}">Partnyorlar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{route('Mainsifarisler')}}">Sifarişlər</a></li>
+                  <li class="nav-item"><a href="{{route('Maincontact')}}" class="nav-link">Əlaqə</a></li>
                 </ul>
               <button type="button" class="modal-btn mt-3" data-bs-toggle="modal"
               data-bs-target="#exampleModal" data-bs-whatever="@mdo">Əməkdaşlıq
@@ -65,36 +65,43 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action="{{route('employe')}}" method="POST">
+
+          @csrf
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Ad,Soyad : <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="recipient-name" required>
+              <input type="text" class="form-control" id="recipient-name" name="name" value="{{old('name')}}">
+              <span class="text-danger">@error('name'){{"Bos qala bilmez"}}@enderror</span>
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Şirkət : <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="recipient-name" required>
+              <input type="text" class="form-control" id="recipient-name" name="busines" value="{{old('busines')}}">
+              <span class="text-danger">@error('busines'){{"Bos qala bilmez"}}@enderror</span>
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Fəaliyyət növü : <span
                   class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="recipient-name" required>
+              <input type="text" class="form-control" id="recipient-name" name="job" value="{{old('job')}}">
+              <span class="text-danger">@error('job'){{"Bos qala bilmez"}}@enderror</span>
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Məhsul şəxs : <span
                   class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="recipient-name" required>
+              <input type="text" class="form-control" id="recipient-name" name="person" value="{{old('person')}}">
+              <span class="text-danger">@error('person'){{"Bos qala bilmez"}}@enderror</span>
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Əlaqə nömrəsi : <span
                   class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="recipient-name" required>
+              <input type="text" class="form-control" id="recipient-name" name="phone" value="{{old('phone')}}">
+              <span class="text-danger">@error('phone'){{"Bos qala bilmez"}}@enderror</span>
             </div>
-
+            <button type="submit" class="modal-footer-btn">Göndər</button>
           </form>
         </div>
         <div class="modal-footer">
 
-          <button type="button" class="modal-footer-btn">Göndər</button>
+         
         </div>
       </div>
     </div>
