@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--owl carousel cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- font-awesome-cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- style -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css" />
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/responsive.css">
+ <title> | Haqqımızda</title>
+</head>
+
+<body onload="done()">
+  <div class="preloader-content"><img src="./images/icons/Eclipse-1s-200px.gif" alt=""></div>
+
+  <div class="scroll-btn"><i class="fa-solid fa-chevron-up"></i></div>
+  <header class="general-header">
+    <div class="container-fluid px-5"> 
+      <div class="row align-items-center justify-content-between">
+       
+        <div class="col-md-4  col-lg-5 d-none d-md-block">
+          <div class="header-logo ">
+            <a href="./index.html">
+              <span class="text-primary">R</span>ealEstateSolutions
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <nav class="nav-menu">
+            <ul class="nav-list d-flex justify-content-between">
+              <li class="nav-item"><a class="nav-link" href="./about.html">Haqqımızda</a></li>
+              <li class="nav-item"><a class="nav-link" href="./partners.html">Partnyorlar</a></li>
+              <li class="nav-item"><a class="nav-link" href="./orders.html ">Sifarişlər</a></li>
+              <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-2 col-lg-2 d-flex justify-content-end modal-btn-content"> <button type="button" class="modal-btn" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Əməkdaşlıq
+          </button>
+        </div>
+        </div>
+        </div>
+          <div class="row ">
+         <div class="col-12 d-md-none d-block ">
+            <div class="mobile-sub-menu ">
+              <div class="sub-menu-header d-flex align-items-center justify-content-between">
+                <div class="header-logo">
+                  <a href="./index.html">
+                    <span class="text-primary">R</span>ealEstateSolutions
+                  </a>
+                </div>
+                <div class="col-4 d-lg-none nav-menu-button-content">
+                  <div class="nav-menu-button">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                  </div>
+                </div>
+              </div>
+              <nav class="mobile-nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item"><a class="nav-link" href="./about.html">Haqqımızda</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./partners.html">Partnyorlar</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sifarişlər</a></li>
+                  <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+                </ul>
+              <button type="button" class="modal-btn mt-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" data-bs-whatever="@mdo">Əməkdaşlıq
+            </button>
+          </nav>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+   <!-- modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Əməkdaşlıq</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Ad,Soyad : <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Şirkət : <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="recipient-name"  required>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Fəaliyyət növü : <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="recipient-name"  required>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Məhsul şəxs : <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="recipient-name"  required>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Əlaqə nömrəsi : <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="recipient-name"  required>
+            </div>
+          
+          </form>
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="modal-footer-btn">Göndər</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="banner-section-2">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 text-center">
+          <h2 class="page-title">
+            Haqqımızda
+          </h2>
+          <ul class="list">
+            <li class="item"><a href="./index.html">Ana səhifə</a></li>
+            <li class="item"><a href="./about.html" class="active">Haqqımızda</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="about-content text-center">
+            <h2 class="title">Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam et ullam illo nobis numquam in eum ratione impedit quo. Praesentium totam laborum veniam alias provident quaerat debitis ut sit.</p>
+          </div>
+        <div class="video-content d-flex justify-content-center">
+            <a class="video-link"  href="https://www.youtube.com/embed/0Pph52PJEP0" data-lity><img src="./images/1.jpg" style="width: 600px;" alt="vifr-bg-img"><div class="video-play-button"><i class="fa-solid fa-play"></i></div></a>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-one">
+    <div class="container">
+      <div class="row px-5">
+        <div class="col-lg-4 col-sm-6 col-12 mb-5">
+          <div class="single-item">
+            <img src="./images/icons/customer-service.png" alt="">
+            <h4 class="item-title">Razı qalan müştəri</h4>
+            <span class="count"> 52</span>
+          </div>
+          </div>
+         <div class="col-lg-4 col-sm-6 col-12 mb-5">
+          <div class="single-item">
+            <img src="./images/icons/Group 567.png" alt="">
+            <h4 class="item-title">İş təcrübəmiz</h4>
+            <span class="count">5 il</span>
+          </div>
+         </div>
+          <div class="col-lg-4 col-sm-6 col-12 mb-5">
+            <div class="single-item">
+              <img src="./images/icons/Group 568.png" alt="">
+              <h4 class="item-title">Uğurlu əməliyyyatlar</h4>
+              <span class="count">100+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery-section">
+    <div class="container">
+      <div class="row">
+        <div class="owl-carousel gallery-carousel owl-theme">
+          
+       
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1654783859762-4231b96af3ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1654696623123-3f4dffe33a80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1653763843954-0ad7300268a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk4fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1654185083839-d9e152ce9640?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDg2fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1631882383610-879456475533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDg4fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="https://images.unsplash.com/photo-1654185083839-d9e152ce9640?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDg2fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners-section my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="partners-carousel owl-carousel  owl-theme">
+            <div class="slider-item">
+              <a href=""> <img class="img-fluid" src="./images/partners/2.png" alt="partners_img"></a>
+            </div>
+            <div class="slider-item">
+              <a href=""> <img class="img-fluid" src="./images/partners/3.png" alt="partners_img"></a>
+            </div>
+            <div class="slider-item">
+              <a href=""> <img src="./images/partners/4.png" alt="partners_img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-area">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="row">
+          <div class="col-lg-3 col-6 mb-3">
+            <div class="single-item">
+              <div class="footer-logo">
+                <!-- <a href=""><img  src="./images/logo/Res-logo-01.png" alt="logo_img"></a> -->
+              </div>
+              <ul class="link-follow mt-5 d-flex ">
+                <li><a target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 mb-3 ">
+            <div class="single-item">
+              <h4 class="footer-heading">
+                RES
+              </h4>
+              <div class="footer-links">
+                <ul>
+                  <li><a href="./about.html" class="footer-link">Haqqımızda</a></li>
+                  <li><a href="./partners.html" class="footer-link">Partnyorlar</a></li>
+                  <li><a href="./contact.html" class="footer-link">Əlaqə</a></li>
+                  <li><a href="./orders.html" class="footer-link">Sifarişlər</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-3">
+            <div class="single-item">
+              <h4 class="footer-heading">
+                Sifarişlər
+              </h4>
+              <div class="footer-links">
+                <ul>
+                  <li><a href="" class="footer-link">Kommersiya əmlakı</a></li>
+                  <li><a href="" class="footer-link">Mənzillər</a></li>
+                  <li><a href="" class="footer-link">Bağ evi / Villa</a></li>
+                  <li><a href="" class="footer-link">Xaricdə əmlak</a></li>
+                  <li><a href="" class="footer-link">Torpaq</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <div class="copy-text">Copyright © 2022 Bütün hüquqlar qorunur. <b><a target="_blank" href="https://proton.az/">Proton.az</a></b></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
