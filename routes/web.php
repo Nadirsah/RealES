@@ -56,7 +56,7 @@ Route::get('/footer',[RESController::class,"footer"])->name('Mainfooter');
 
 
 //Admin
-Route::get('/redirects',[AdminController::class,"redirect"]);
+Route::get('/redirects',[AdminController::class,"redirect"])->name('mainredirect');
 
 Route::get('/user',[AdminController::class,"user"]);
 
