@@ -61,43 +61,50 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
+        @if(Session('message'))
+<span class="alert alert-info">{{session('message')}}</span>
+        @endif
           <h5 class="modal-title" id="exampleModalLabel">Əməkdaşlıq</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+
+       
           <form action="{{route('employe')}}" method="POST">
 
           @csrf
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Ad,Soyad : <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="recipient-name" name="name" value="{{old('name')}}">
-              <span class="text-danger">@error('name'){{"Bos qala bilmez"}}@enderror</span>
+              <!-- <span class="text-danger">@error('name'){{"Bos qala bilmez"}}@enderror</span> -->
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Şirkət : <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="recipient-name" name="busines" value="{{old('busines')}}">
-              <span class="text-danger">@error('busines'){{"Bos qala bilmez"}}@enderror</span>
+              <!-- <span class="text-danger">@error('busines'){{"Bos qala bilmez"}}@enderror</span> -->
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Fəaliyyət növü : <span
                   class="text-danger">*</span></label>
               <input type="text" class="form-control" id="recipient-name" name="job" value="{{old('job')}}">
-              <span class="text-danger">@error('job'){{"Bos qala bilmez"}}@enderror</span>
+              <!-- <span class="text-danger">@error('job'){{"Bos qala bilmez"}}@enderror</span> -->
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Məhsul şəxs : <span
                   class="text-danger">*</span></label>
               <input type="text" class="form-control" id="recipient-name" name="person" value="{{old('person')}}">
-              <span class="text-danger">@error('person'){{"Bos qala bilmez"}}@enderror</span>
+              <!-- <span class="text-danger">@error('person'){{"Bos qala bilmez"}}@enderror</span> -->
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Əlaqə nömrəsi : <span
                   class="text-danger">*</span></label>
               <input type="text" class="form-control" id="recipient-name" name="phone" value="{{old('phone')}}">
-              <span class="text-danger">@error('phone'){{"Bos qala bilmez"}}@enderror</span>
+              <!-- <span class="text-danger">@error('phone'){{"Bos qala bilmez"}}@enderror</span> -->
             </div>
             <button type="submit" class="modal-footer-btn">Göndər</button>
           </form>
+
+          
         </div>
         <div class="modal-footer">
 

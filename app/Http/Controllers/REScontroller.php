@@ -19,6 +19,7 @@ use App\Models\Adress;
 use App\Models\Phone;
 use App\Models\Email;
 use App\Models\Employe;
+use App\Models\Facebook;
 
 
 
@@ -82,7 +83,7 @@ $data->phone=$req->phone;
 
 $data->save();
 
-return redirect()->back();
+return redirect()->back()->with('message',"Success!");
 }
 
 public function adminemploye(){
@@ -90,4 +91,9 @@ $data=Employe::paginate(5);
     return view('admin.employe',compact('data'));
 }
 
+public function footer(){
+$data=Facebook::where('id',1)->first();
+
+    return view("footer",compact('data'));
+}
 }

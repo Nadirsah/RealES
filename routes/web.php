@@ -7,6 +7,7 @@ use App\Http\Controllers\Haqqimizda;
 use App\Http\Controllers\Pagepartnyor;
 use App\Http\Controllers\Sifarisler;
 use App\Http\Controllers\Contact_cont;
+use App\Http\Controllers\Sosial;
 
 
 
@@ -47,6 +48,8 @@ Route::get('/partnyorlar',[RESController::class,"partnyorlar"])->name('Mainpartn
 Route::get('/sifarisler',[RESController::class,"sifarisler"])->name('Mainsifarisler');
 
 Route::get('/contact',[RESController::class,"contact"])->name('Maincontact');
+
+Route::get('/footer',[RESController::class,"footer"])->name('Mainfooter');
 
 
 
@@ -248,6 +251,23 @@ Route::get("deleteemail/{id}",[Contact_cont::class,'deleteemail']);
 Route::post("/Storemploye",[RESController::class,'employe'])->name('employe');
 
 Route::get("/Employe",[RESController::class,'adminemploye'])->name('adminemploye');
+
+//sosail-facebook
+
+Route::get("/Facebook",[Sosial::class,'facebook'])->name('facebook');
+
+Route::post("/Storefacebook",[Sosial::class,'Storefacebook'])->name('storefacebook');
+
+Route::get("Editfacebook/{id}",[Sosial::class,'editfacebook']);
+
+Route::post("/Ufacebook",[Sosial::class,'ufacebook'])->name('Updatefacebook');
+
+Route::get("deletefacebook/{id}",[Sosial::class,'deletefacebook']);
+
+
+
+
+
 
 
 
